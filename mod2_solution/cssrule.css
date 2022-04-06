@@ -1,0 +1,59 @@
+*{
+	box-sizing:border-box;
+}
+h1{	text-align: Center;
+	text-transform: capitalize;
+}
+.edibles{
+	background-color: lightgray;
+	border: 2px solid black;
+	margin: 5px;
+	padding-top: 30px;
+	float: left;
+	width: 32%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+	position: relative;
+
+}
+
+
+#chicken,#beef,#sushi{
+	font-size: 25px;
+	border: 2px solid black;
+	text-align: center;
+	float: right;
+	margin: 0;
+	padding: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	clear: both;
+}
+#chicken{
+	background-color:lightpink;
+}
+#beef{
+	background-color:orangered;
+}
+#sushi{
+	background-color: yellow;
+}
+
+@media (min-width:992px ){
+	.edibles{
+		width: 33.33%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.edibles{
+		width:50%;
+	}
+}
+@media (max-width: 767px){
+	.edibles{
+		width: 100%;
+	}
+}
+
